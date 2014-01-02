@@ -58,17 +58,6 @@ def filter():
 		parser.reset()
 		lists_clear()
 
-def script():
-	handle = open('de.xml', 'r')
-	_ass = handle.read()
-	
-	for i in range(0, len(handle.readlines())):
-		start, end = find(_ass, end)
-		print content[start:end]
-		parser.feed(content[start:end])
-		print 'write paragraph ' + str(i)
-		_write()
-
 def check_for_file():
 	if os.path.isfile(target):
 		os.remove(target)
