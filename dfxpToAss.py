@@ -109,6 +109,6 @@ def initial():
 	return
 
 ###StartProgramm###
-copyright()
+
 initial()
 copyright()
