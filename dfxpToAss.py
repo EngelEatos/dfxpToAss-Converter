@@ -17,7 +17,7 @@ target='new_ass.ass'
 class MyHTMLParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         for attr in attrs:
-			tmp = str(attr).split(', ')[1].replace("'","").replace(")","")
+			tmp = str(attr).split(', ')[1].translate(None,"')")
 			myattr.append(tmp)
 
     def handle_data(self, data):
@@ -32,7 +32,6 @@ def find(content,i):
 	end_ = content.find("</p>", index)
 	if end_ == -1:
 		return -1
-	#print 'count=' + str(count-end_) + '+'+ str(end_) + "=" + str(count+end_)
 	mycontent.append(content[index:end_])
 	return end_
 
@@ -88,8 +87,6 @@ def read_file(path,mode):
 		result = len(handle.read())
 		handle.close
 		return result
-	elif mode=='l':
-		handle.write()
 	else:
 		handle.close()
 		print 'Error: Wrong Mode - ' + str(mode)
