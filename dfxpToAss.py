@@ -98,7 +98,7 @@ def initial():
 		if end_ == -1:
 			break
 		now_count = end_
-		print 'Extracting line ' + str(i) + ' to ' + str(now_count)
+		print 'Extracting Paragraph - char ' + str(i) + ' to char ' + str(now_count)
 		i = now_count
 		end_ = find(_ass, now_count)
 		if end_ == -1:
