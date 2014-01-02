@@ -72,7 +72,7 @@ def script():
 
 def check_for_file():
 	if os.path.isfile(target):
-		os.remove(target)
+		os.remove(target)s
 
 def read_file(path,mode):
 	handle = open(path, 'r+')
