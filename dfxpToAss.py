@@ -72,7 +72,7 @@ def script():
 
 def check_for_file():
 	if os.path.isfile(target):
-		os.remove(target)s
+		os.remove(target)
 
 def read_file(path,mode):
 	handle = open(path, 'r+')
@@ -88,6 +88,8 @@ def read_file(path,mode):
 		result = len(handle.read())
 		handle.close
 		return result
+	elif mode=='l':
+		handle.write()
 	else:
 		handle.close()
 		print 'Error: Wrong Mode - ' + str(mode)
