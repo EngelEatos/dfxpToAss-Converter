@@ -9,7 +9,7 @@ from HTMLParser import HTMLParser
 myattr=[]
 text=[]
 mycontent = []
-source = 'de.xml'
+source = '391673657002_704864433002_saoee.dfxp'
 header_path = 'header.txt'
 target='new_ass.ass'
 ######################
