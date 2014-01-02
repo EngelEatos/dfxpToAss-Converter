@@ -88,8 +88,6 @@ def read_file(path,mode):
 		result = len(handle.read())
 		handle.close
 		return result
-	elif mode=='l':
-		handle.write()
 	else:
 		handle.close()
 		print 'Error: Wrong Mode - ' + str(mode)
