@@ -1,11 +1,17 @@
-dfxpToAss-Converter
-===================
+# dfxpToAss-Converter
 
 Python script to parse and convert dfxp (subtitle) to ass
 
+usage: dfxptoass.py [-h] -i FILE -o FILE
 
-1. edit the variables on the top: source, header_path, target
-2. run python script / on windows with cmd
-3. a new .ass-file will be created
+convert dfxp to ass
 
-PYTHON 2.7 REQUIRED
+optional arguments:
+
+-h, --help show this help message and exit
+
+-i FILE input dfxp file
+
+-o FILE output ass file
+
+PYTHON 3+ REQUIRED
