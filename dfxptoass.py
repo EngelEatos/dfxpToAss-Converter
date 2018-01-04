@@ -1,5 +1,4 @@
 ﻿"""convert dfxp files to ass"""
-#!/usr/bin/python
 import argparse
 import os.path
 import timeit

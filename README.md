@@ -4,18 +4,23 @@ Python script to parse and convert dfxp (subtitle) to ass
 
 ## Usage
 
+```
 usage: dfxptoass.py [-h] -i FILE -o FILE
 
 convert dfxp to ass
 
 optional arguments:
 
--h, --help show this help message and exit
+    -h, --help show this help message and exit
 
--i FILE input dfxp file
+    -i FILE input dfxp file
 
--o FILE output ass file
+    -o FILE output ass file
+```
 
 ## Requirements
 
-PYTHON 3+ REQUIRED
+* python 3+
+* argparse
+* timeit
+* bs4
